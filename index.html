@@ -72,7 +72,7 @@
               Эффективные решения <br />
               для вашего бизнеса
             </h1>
-            <button class="hero-button" type="button">Заказать услугу</button>
+            <button class="hero-button" type="button" data-modal-open>Заказать услугу</button>
           </div>
         </div>
       </section>
@@ -137,6 +137,7 @@
           <h2 class="jobs-header">Чем мы занимаемся</h2>
           <ul class="what-we-do-list">
             <li class="what-we-do-item">
+              <div class="thumb">
               <img
                 class="image"
                 src="./images/coder.jpg"
@@ -144,8 +145,10 @@
                 width="370"
                 height="294"
               />
+            <p class="label"> Десктопные приложения</p></div>
             </li>
             <li class="examples-list-item">
+              <div class="thumb">
               <img
                 class="image"
                 src="./images/adaptive_design.jpg"
@@ -153,8 +156,10 @@
                 width="370"
                 height="294"
               />
+              <p class="label">Мобильные приложения</p></div>
             </li>
             <li class="examples-list-item">
+              <div class="thumb">
               <img
                 class="image"
                 src="./images/color_scheme.jpg"
@@ -162,6 +167,7 @@
                 width="370"
                 height="294"
               />
+              <p class="label">Дизайнерские решения</p></div>
             </li>
           </ul>
         </div>
@@ -494,5 +500,12 @@
         </div>
       </div>
     </footer>
+    <!----------------------------Modal-window------------------------------------->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button class="modal-close-btn" data-modal-close></button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
